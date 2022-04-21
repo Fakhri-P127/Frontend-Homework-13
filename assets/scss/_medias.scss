@@ -1,0 +1,48 @@
+// Medias
+
+@media (max-width: 1000px) {
+  header nav .nav-links {
+    display: none;
+  }
+
+  .nav-actions {
+    span {
+      display: none;
+    }
+  }
+  section#showcase {
+    padding: 0px;
+    padding-top: 50px;
+    height: 60vh;
+    .main-title {
+      h3 {
+        font-size: 2rem;
+        margin: 20px 0;
+      }
+    }
+    .main-text {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  #real-action {
+    border-radius: 20px;
+    box-shadow: rgba(7, 7, 8, 0.6) 2px 12px 24px;
+    #real-action-title {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+    .main-text {
+      font-size: 1.2rem;
+    }
+  }
+  section#moon {
+    .moon-card-text {
+      h3 {
+        font-size: 2rem;
+      }
+    }
+  }
+}

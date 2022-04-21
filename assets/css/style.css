@@ -1,0 +1,237 @@
+@media (max-width: 1000px) {
+  header nav .nav-links {
+    display: none; }
+  .nav-actions span {
+    display: none; }
+  section#showcase {
+    padding: 0px;
+    padding-top: 50px;
+    height: 60vh; }
+    section#showcase .main-title h3 {
+      font-size: 2rem;
+      margin: 20px 0; }
+    section#showcase .main-text {
+      font-size: 1rem;
+      margin-bottom: 30px; }
+  #real-action {
+    border-radius: 20px;
+    box-shadow: rgba(7, 7, 8, 0.6) 2px 12px 24px; }
+    #real-action #real-action-title h3 {
+      font-size: 2rem; }
+    #real-action .main-text {
+      font-size: 1.2rem; }
+  section#moon .moon-card-text h3 {
+    font-size: 2rem; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #f4f4f4; }
+
+ul {
+  list-style: none;
+  padding: 0; }
+
+.main-title h3 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.main-text {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 50px; }
+
+.main-btn {
+  font-size: 14px;
+  padding: 15px 65px;
+  border-radius: 3px;
+  border: none;
+  transition: 0.2s all ease-in-out;
+  color: #f4f4f4;
+  background-color: #0065ed; }
+  .main-btn:hover {
+    transform: scale(1.1); }
+
+header nav {
+  display: flex;
+  align-items: center;
+  min-height: 70px; }
+  header nav .custom-alignment {
+    align-items: center;
+    text-align: end; }
+  header nav .brand-logo {
+    width: 93px; }
+    header nav .brand-logo img {
+      width: 100%; }
+  header nav .nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0; }
+    header nav .nav-links ul a {
+      color: grey;
+      transition: 0.3s all; }
+      header nav .nav-links ul a:hover {
+        color: #0065ed; }
+  header nav .nav-actions i {
+    font-size: 20px;
+    color: #0065ed;
+    margin-left: 35px; }
+  header nav .nav-actions span {
+    margin-left: 10px;
+    font-size: 13px;
+    color: #0065ed; }
+
+#showcase {
+  background: url("https://www.nokia.com/sites/default/files/styles/scale_720_width/public/2022-04/nokia_pp_digital_21_720x540%20%281%29.jpg") center/cover no-repeat;
+  height: 100vh;
+  color: #f4f4f4;
+  padding: 150px 0 0 180px; }
+
+#real-action {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("/assets/images/6940_Real Action Header_AF_V1Real Action - 1120x560 NO TEXT (1).jpg") center/cover no-repeat;
+  margin: 60px 0;
+  color: #f4f4f4;
+  min-height: 90vh;
+  display: flex;
+  align-items: center; }
+  #real-action .texts {
+    margin-left: 30px; }
+  #real-action-title h3 {
+    font-size: 54px; }
+
+#products {
+  margin: 6rem 0; }
+  #products .custom-height {
+    height: 100%; }
+
+.custom-card .product-image {
+  overflow: hidden;
+  margin: 20px 0;
+  height: 250px; }
+  .custom-card .product-image img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out; }
+
+.custom-card .product-title {
+  margin-bottom: 30px; }
+
+.custom-card:hover {
+  cursor: pointer; }
+  .custom-card:hover .product-title {
+    color: #0065ed;
+    text-decoration: underline; }
+  .custom-card:hover .product-image {
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 24px; }
+    .custom-card:hover .product-image img {
+      transform: scale(1.2); }
+
+#moon {
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(to top left, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1)), url(/assets/images/Moon_nokia_lead_op1.jpg) center/cover;
+  min-height: 100vh; }
+  #moon .moon-card {
+    padding: 80px;
+    background-color: #0065ed;
+    color: #f4f4f4; }
+    #moon .moon-card h3 {
+      font-size: 3.5rem;
+      margin-bottom: 40px; }
+    #moon .moon-card-btn .main-btn-inversed {
+      background-color: #f4f4f4;
+      color: #0065ed;
+      font-size: 14px;
+      padding: 15px 65px;
+      border-radius: 3px;
+      border: none;
+      transition: 0.2s all ease-in-out; }
+      #moon .moon-card-btn .main-btn-inversed:hover {
+        transform: scale(1.1); }
+
+#photos {
+  margin: 4rem 0; }
+
+footer {
+  background-color: #001135;
+  color: rgba(255, 255, 255, 0.8); }
+  footer .footer-top {
+    padding: 90px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    footer .footer-top .logo img {
+      width: 93px; }
+    footer .footer-top .social-medias ul {
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between; }
+      footer .footer-top .social-medias ul a i {
+        color: #f4f4f4;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        padding: 10px;
+        transition: 0.3s all; }
+        footer .footer-top .social-medias ul a i:hover {
+          background-color: #f4f4f4;
+          color: #001135; }
+      footer .footer-top .social-medias ul a span {
+        margin-left: 20px;
+        font-size: 13px;
+        transition: 0.4s all;
+        color: rgba(255, 255, 255, 0.8); }
+        footer .footer-top .social-medias ul a span:hover {
+          color: #0065ed; }
+    footer .footer-top .custom-flex {
+      display: flex;
+      align-items: center; }
+      footer .footer-top .custom-flex .right-side {
+        margin-left: 80px;
+        display: flex; }
+        footer .footer-top .custom-flex .right-side span {
+          font-size: 13px; }
+        footer .footer-top .custom-flex .right-side .custom-btn {
+          font-size: 14px;
+          padding: 15px 65px;
+          border-radius: 3px;
+          border: none;
+          transition: 0.2s all ease-in-out;
+          background-color: transparent;
+          border: 1px solid #f4f4f4;
+          color: #f4f4f4;
+          margin-left: 30px; }
+          footer .footer-top .custom-flex .right-side .custom-btn:hover {
+            transform: scale(1.1); }
+          footer .footer-top .custom-flex .right-side .custom-btn:hover {
+            background-color: #f4f4f4;
+            color: #0065ed; }
+  footer .footer-bottom {
+    padding: 30px 0; }
+    footer .footer-bottom ul li h5 {
+      color: #f4f4f4;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    footer .footer-bottom ul li span {
+      display: block;
+      padding: 10px 0;
+      font-size: 13px;
+      transition: 0.3s all; }
+      footer .footer-bottom ul li span:hover {
+        color: #0065ed; }
+  footer .footer-rules {
+    padding-bottom: 60px; }
+    footer .footer-rules ul {
+      display: flex;
+      justify-content: end; }
+      footer .footer-rules ul li {
+        margin-left: 20px;
+        font-size: 9px; }
+        footer .footer-rules ul li a {
+          color: grey;
+          transition: 0.3s all; }
+          footer .footer-rules ul li a:hover {
+            color: #0065ed; }

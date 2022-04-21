@@ -1,0 +1,291 @@
+@import "medias", "mixins", "buttons";
+$primary-color: #0065ed;
+$light-color: #f4f4f4;
+
+//Globals start
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.main-title {
+  h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+.main-text {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.main-btn {
+  @include defaultButton;
+  color: $light-color;
+  background-color: $primary-color;
+}
+
+// Globals end
+
+header {
+  nav {
+    @include flexYCenter;
+    min-height: 70px;
+    .custom-alignment {
+      align-items: center;
+      text-align: end;
+    }
+
+    .brand-logo {
+      width: 93px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .nav-links {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+
+        a {
+          color: grey;
+          transition: 0.3s all;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+
+    .nav-actions {
+      i {
+        font-size: 20px;
+        color: $primary-color;
+        margin-left: 35px;
+      }
+      span {
+        margin-left: 10px;
+        font-size: 13px;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+//Sections start
+#showcase {
+  background: url("https://www.nokia.com/sites/default/files/styles/scale_720_width/public/2022-04/nokia_pp_digital_21_720x540%20%281%29.jpg")
+    center/cover no-repeat;
+  height: 100vh;
+  color: $light-color;
+  padding: 150px 0 0 180px;
+}
+
+#real-action {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)),
+    url("/assets/images/6940_Real\ Action\ Header_AF_V1Real\ Action\ -\ 1120x560\ NO\ TEXT\ \(1\).jpg")
+      center/cover no-repeat;
+  margin: 60px 0;
+  color: $light-color;
+  min-height: 90vh;
+  @include flexYCenter;
+  .texts {
+    margin-left: 30px;
+  }
+  &-title {
+    h3 {
+      font-size: 54px;
+    }
+  }
+}
+
+#products {
+  margin: 6rem 0;
+  .custom-height {
+    height: 100%;
+  }
+}
+.custom-card {
+  .product-image {
+    overflow: hidden;
+    margin: 20px 0;
+    height: 250px;
+    img {
+      width: 100%;
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .product-title {
+    margin-bottom: 30px;
+  }
+  &:hover {
+    cursor: pointer;
+    .product-title {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+    .product-image {
+      box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 24px;
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+#moon {
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(
+      to top left,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(/assets/images/Moon_nokia_lead_op1.jpg) center/cover;
+  min-height: 100vh;
+
+  .moon-card {
+    padding: 80px;
+    background-color: $primary-color;
+    color: $light-color;
+    h3 {
+      font-size: 3.5rem;
+      margin-bottom: 40px;
+    }
+    &-btn {
+      .main-btn-inversed {
+        background-color: $light-color;
+        color: $primary-color;
+        @include defaultButton;
+      }
+    }
+  }
+}
+
+#photos {
+  margin: 4rem 0;
+}
+// Sections end
+
+// Footer starts
+
+footer {
+  background-color: #001135;
+  color: rgba(255, 255, 255, 0.8);
+  .footer-top {
+    padding: 90px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    .logo {
+      img {
+        width: 93px;
+      }
+    }
+    .social-medias {
+      ul {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        a {
+          i {
+            color: $light-color;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            padding: 10px;
+            transition: 0.3s all;
+            &:hover {
+              background-color: $light-color;
+              color: #001135;
+            }
+          }
+          span {
+            margin-left: 20px;
+            font-size: 13px;
+            transition: 0.4s all;
+            color: rgba(255, 255, 255, 0.8);
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+    }
+    .custom-flex {
+      @include flexYCenter;
+      .right-side {
+        margin-left: 80px;
+        display: flex;
+        span {
+          font-size: 13px;
+        }
+        .custom-btn {
+          @include defaultButton;
+          background-color: transparent;
+          border: 1px solid $light-color;
+          color: $light-color;
+          margin-left: 30px;
+
+          &:hover {
+            background-color: $light-color;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: 30px 0;
+    ul {
+      li {
+        h5 {
+          color: $light-color;
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+
+        span {
+          display: block;
+          padding: 10px 0;
+          font-size: 13px;
+          transition: 0.3s all;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .footer-rules {
+    padding-bottom: 60px;
+    ul {
+      display: flex;
+      justify-content: end;
+      li {
+        margin-left: 20px;
+        font-size: 9px;
+        a {
+          color: grey;
+          transition: 0.3s all;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
